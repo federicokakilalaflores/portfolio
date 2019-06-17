@@ -1,0 +1,98 @@
+@media (max-width: 768px){
+    /* navigation bar */
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem;
+        background-color: #222;
+    }
+
+    #navbar > ul{
+        margin-top: 0;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        max-height: 0vh;
+        overflow: hidden;
+        transition: all 200ms linear;
+    }
+
+    #navbar > ul.toggleNav{
+        max-height: 100vh;
+        margin-top: 1rem
+    }
+
+    #navbar > ul > li{
+        margin:  0;
+    }
+
+    #navbar > ul > li > a{
+        padding: 1.5rem 7px;
+        display: block;
+    }
+
+    #navbarBtn{
+        display: block;
+    }
+
+    #navbar > ul > li > a:hover::before, #navbar > ul > li > a:hover::after{
+        transform: scale(0);    
+    }
+
+  
+
+}
+
+@media (max-width: 400px){
+    #header{
+        height: 100vh;
+    }
+    /* showcase area */
+    #header #showcase{
+        display: block;
+        padding-top: 6rem;
+    }
+
+    #header #showcase .column{
+        padding: 0;
+        text-align: center;
+    }
+
+    #header #showcase .column:last-child p{
+        font-size: 1rem;
+        margin: 1rem 0;
+        font-weight: 900;
+    }
+
+    #header #showcase .column:last-child p:nth-child(2){
+        font-size: 1.2rem;
+    }
+    
+    #header #showcase .column:last-child p:nth-child(3){
+        font-size: 1.3rem;
+    }
+
+    #header #showcase .column:first-child h1{
+        font-size: 10rem;
+    }
+    
+    .btn-work, .btn-download {
+        font-size: .8rem;
+        padding: .3rem .7rem;   
+    }
+
+    .social-links i{
+       font-size: .9rem;
+       margin: 0 3px;
+    }
+
+    /* project section */
+    .flex-col-2{
+        flex-direction: column;
+    }
+
+}

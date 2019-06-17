@@ -2,8 +2,8 @@
 #header{
     position: relative;
     width: 100%;
-    min-height: 80vh;
-    background: var(--secondary-bg-color) url("../images/bg.jpg") center / cover no-repeat;
+    height: 80vh;
+    background: #000 url("../images/bg.jpg") center / cover no-repeat;
     background-attachment: scroll;
     background-attachment: fixed;
     overflow: hidden;
@@ -143,6 +143,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 6rem;
+    transition: 400ms ease-in; 
 }
 
 #navbar > ul{
@@ -195,6 +196,13 @@
     transform: scale(1);    
 }
 
+#navbarBtn{
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.3rem;
+    display: none;
+}
 
 /* socaial links */
 .social-links{
@@ -216,7 +224,7 @@
 
 /* project section */
 .section{
-    margin-top: 6rem;
+    margin: 8rem 0;
 }
 
 .page-title{

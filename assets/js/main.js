@@ -1,22 +1,29 @@
-let navBtn = document.getElementById("navbar-btn");
-let cards = document.querySelectorAll(".card");
+const navbar = document.getElementById("navbar");
+const navbarBtn =  document.getElementById("navbarBtn");
+const navLinks = document.querySelectorAll("#navbar > ul > li > a");
+const navList = navbar.getElementsByTagName("ul")[0];
 
-cards.forEach(card => card.addEventListener('click', toggleFunc, true));
+window.onscroll = function(){ changeNavbarOnScroll(navbar); };
 
-//toggle cards overlay
-function toggleFunc(){
-    cards.forEach((elem) => {
-        if(elem != this){
-            elem.getElementsByClassName("card-overlay")[0].style.height = "0%";
-        }
-    });
-
-    let cardOverlay  = this.getElementsByClassName("card-overlay")[0];
-    cardOverlay.style.height == "100%" ? cardOverlay.style.height = "0%" : cardOverlay.style.height = "100%";
+function changeNavbarOnScroll(navbar){
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+        navbar.style.backgroundColor = "#222";
+    }else{
+        navbar.style.backgroundColor = "";
+    }
 }
 
-//toggle navbar
- navBtn.onclick = function(e){
-     document.querySelector("#navbar ul").classList.toggle("toggle");
-     e.stopPropagation; 
- }  
+// toggle navbar
+navbarBtn.onclick = function(){ toggleNavbar() }
+function toggleNavbar(){
+    navList.classList.toggle("toggleNav");
+}
+
+//close navbar if the links are clicked
+navLinks.forEach((elem) => elem.addEventListener('click', clickNavLinks));
+
+function clickNavLinks(){
+    let isOpen  = navList.classList.contains("toggleNav");
+    (isOpen) ? navbarBtn.click() : false
+}
+
