@@ -69,24 +69,23 @@
     }
 
     #header #showcase .column:last-child p:nth-child(2){
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
     #header #showcase .column:last-child p:nth-child(3){
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 
     #header #showcase .column:first-child h1{
-        font-size: 10rem;
+        font-size: 13rem;
     }
     
     .btn-work, .btn-download {
-        font-size: .8rem;
+        font-size: 1rem;
         padding: .3rem .7rem;   
     }
 
     .social-links i{
-       font-size: .9rem;
        margin: 0 3px;
     }
 
