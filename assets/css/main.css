@@ -1,0 +1,10 @@
+/* reset the style of the browser */
+@import url('base.css');
+/* core style */
+@import url('style.css');
+/* responsiveness of the design */
+@import url('media_queries.css');
+
+
+
+

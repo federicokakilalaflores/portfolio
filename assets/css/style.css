@@ -1,0 +1,218 @@
+/* showcase area */
+#header{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background: var(--secondary-bg-color) url("../images/bg.jpg") center / cover no-repeat;
+    overflow: hidden;
+}
+
+#header::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 98%;
+    left: 0;
+    background-color: var(--main-bg-color);
+    transform-origin: top right; 
+    transform: skewY(5deg);
+    z-index: 2;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.75;
+    z-index: 1;
+}
+
+#header #showcase{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header #showcase .column{
+  padding: 1rem 3rem;
+}
+
+#header #showcase .column:first-child{
+    text-align: center;
+}
+
+#header #showcase .column:last-child p{
+    font-size: 1.7rem;
+    margin: 1.2rem 0;
+    font-weight: 900;
+}
+
+#header #showcase .column:last-child p:nth-child(2){
+    font-size: 2rem;
+}
+
+#header #showcase .column:last-child p:nth-child(3){
+    font-size: 2.2rem;
+}
+
+.hl{
+    color: var(--primary-color);
+    text-shadow: 2px 2px #eee;
+}
+
+#header #showcase .column:first-child h1{
+    font-size: 17rem;
+    color: var(--primary-color);
+    font-family: gugi, sans-serif;
+    transform: rotate(-10deg);
+    text-shadow: -1px 1px 0 var(--secondary-color), 
+                 -2px 2px 0 var(--secondary-color), 
+                 -3px 3px 0 var(--secondary-color), 
+                 -4px 4px 0 var(--secondary-color), 
+                 -5px 5px 0 var(--secondary-color), 
+                 -6px 6px 0 var(--secondary-color), 
+                 -7px 7px 0 var(--secondary-color), 
+                 -8px 8px 0 var(--secondary-color),
+                 -9px 9px 0 var(--secondary-color),
+                 -10px 10px 0 var(--secondary-color),
+                 -11px 11px 0 var(--secondary-color),
+                 -12px 12px 0 var(--secondary-color),
+                 -13px 13px 0 var(--secondary-color),
+                 -14px 14px 0 var(--secondary-color),
+                 -15px 15px 0 var(--secondary-color);
+                 
+}    
+
+.btn-work, .btn-download {
+    display: inline-block;
+    color: #eee; 
+    padding: .5rem 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: var(--secondary-color);
+    transition: 200ms ease-out; 
+}
+
+.btn-download{
+    background-color: var(--secondary-color); 
+    margin-left: 7px;
+}
+
+.btn-work:hover{
+    border-color: var(--primary-color);
+}
+
+.btn-download:hover{
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+}
+
+/* navigation bar */
+#logo{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: russo, sans-serif;
+}
+
+#logo > span{
+    color: var(--primary-color);
+    padding: 3px 5px;
+    border: 2px solid var(--secondary-color)
+}
+
+#navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6rem;
+}
+
+#navbar > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#navbar > ul > li{
+    margin: 0 1.2rem;
+}
+
+#navbar > ul > li:last-of-type{
+    margin-right: 0;
+}
+
+#navbar > ul > li > a{
+    position: relative;
+    color: var(--muted-color);
+    text-transform: uppercase;
+    font-size: .93rem;
+    padding: 6px 3px;
+    letter-spacing: 1px; 
+}
+
+#navbar > ul > li > a::before, #navbar > ul > li > a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary-color);
+    transform: scale(0);
+    transition: transform 200ms;
+}
+
+#navbar > ul > li > a::before{
+    left: 0;
+    top: 0;
+    transform-origin: left; 
+}
+
+#navbar > ul > li > a::after{
+    left: 0;
+    bottom: 0;
+    transform-origin: right; 
+}
+
+#navbar > ul > li > a:hover::before, #navbar > ul > li > a:hover::after{
+    transform: scale(1);    
+}
+
+
+/* socaial links */
+.social-links{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 3;
+}
+
+.social-links i{
+    font-size: 1.5rem;
+    margin: 0 5px;
+    color: var(--primary-color);
+}
+
+.social-links i:hover{
+    color: var(--secondary-color);
+}
+
+
+
+
