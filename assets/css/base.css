@@ -18,8 +18,8 @@
 }
 
 @font-face{
-    src: url("../fonts/Gugi.ttf");
-    font-family: gugi;
+    src: url("../fonts/courgette.ttf");
+    font-family: courgette;
 }
 
 *{
@@ -54,4 +54,8 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+section{
+    padding: 1.5rem 0;
 }

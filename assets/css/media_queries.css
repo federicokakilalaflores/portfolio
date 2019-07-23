@@ -43,13 +43,17 @@
         transform: scale(0);    
     }
 
-  
+    /* footer */
+    footer > span{
+        display: block;
+        padding: .5rem;
+    }
 
 }
 
 @media (max-width: 500px){
     #header{
-        min-height: 100vh;
+        min-height: 120vh;
     }
     /* showcase area */
     #header #showcase{
