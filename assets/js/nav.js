@@ -81,7 +81,6 @@ function smoothScroll(ev){
     function step(timestamp) {
         if (!start) start = timestamp;
         var progress = timestamp - start;
-        // window.scrollTo(0, distance * (progress/duration) + startPos);
         window.scrollTo(0, easeInOutQuad(progress, startPos, distance, duration));
         if (progress < duration) window.requestAnimationFrame(step);
     }
