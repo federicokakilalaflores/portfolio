@@ -49,12 +49,7 @@ function clickNavLinks(ev){
     (isOpen) ? navbarBtn.click() : false;
 
     //call smootch scroll function
-    smoothScroll(ev);
-
-    //set links to active
-    navLinks.forEach(link => link.classList.remove("activeLink"));
-    this.classList.add("activeLink");
-    
+    smoothScroll(ev); 
 }
 
 // hide the nav item if the target is != navbarBtn

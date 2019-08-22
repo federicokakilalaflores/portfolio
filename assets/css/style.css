@@ -278,6 +278,17 @@
     border: 2px solid var(--secondary-color);
     padding: 4px;
     border-radius: 4px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.img-gallery img{
+    width: 100%;
+    transition: all 300ms linear; 
+}
+
+.img-gallery img:hover{
+    width: 110%;
 }
 
 .technologies li{
