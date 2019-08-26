@@ -1,7 +1,7 @@
 const navbar = document.getElementById("navbar");
 const navbarBtn =  document.getElementById("navbarBtn");
-const navLinks = document.querySelectorAll("a[href]");
-let navList = navbar.getElementsByTagName("ul")[0];
+const navLinks = document.querySelectorAll("a.nav"); 
+let navList = navbar.getElementsByTagName("ul")[0]; 
 
 window.addEventListener('scroll', function(){ 
     changeNavbarOnScroll(navbar); 
