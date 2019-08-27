@@ -42,6 +42,10 @@
     #navbar > ul > li > a:hover::before, #navbar > ul > li > a:hover::after{
         transform: scale(0);    
     }
+    
+    .img-gallery{
+        height: auto;
+    }
 
     /* footer */
     footer > span{
