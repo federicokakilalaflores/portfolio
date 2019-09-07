@@ -1,3 +1,51 @@
+/* loader */
+.loader-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    z-index: 100;
+}
+
+.loader-wrapper .loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.7rem;
+    transform: translate(-50%, -50%);
+}
+
+.loader-wrapper .loader span{
+    font-size: 3.5rem;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loader-wrapper .loader span:nth-child(1){
+    animation-delay: 500ms;
+} 
+
+.loader-wrapper .loader span:nth-child(2){
+    animation-delay: 1s;
+}   
+
+.loader-wrapper .loader span:nth-child(3){
+    animation-delay: 1.5s;
+}
+
+@keyframes loading{
+    from{
+        color: white;
+        opacity: 1;
+    }
+    to{
+        color: white;
+        opacity: 0;  
+    }
+}
+
 /* showcase area */
 #header{
     position: relative;
