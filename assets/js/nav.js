@@ -23,10 +23,7 @@ function setActiveOnScroll(){
     
     sections.forEach((section) => {
         if(window.pageYOffset >= section.offsetTop - 400){
-            sectionTargetId = "#" + section.id;
-            if(section.id !== "header"){
-                 section.classList.add("animated", "fadeInUp", "faster");
-            }    
+            sectionTargetId = "#" + section.id;  
         }
     });
 
