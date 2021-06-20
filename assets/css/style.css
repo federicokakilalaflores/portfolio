@@ -15,7 +15,7 @@
     transform: translate(-50%, -50%);
 }
 
-.loader-wrapper .loader span{
+.loader-wrapper .loader span{ 
     font-size: 3.5rem;
     animation-name: loading;
     animation-duration: 2s;
